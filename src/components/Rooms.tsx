@@ -13,7 +13,9 @@ export const Rooms = ({
   selectedRoom?: string;
   isLoading: boolean;
 }) => {
+  
   const [isDelay, setIsDelay] = useState(true);
+
   useEffect(() => {
     const delayTimer = setTimeout(() => {
       setIsDelay(false);
